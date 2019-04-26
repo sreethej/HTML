@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fieldset Legend</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS", sans-serif;
+        }
+        fieldset{
+            background-color:lightcoral;
+            border:3px solid blue;
+            box-shadow:0 0 5px black;
+            padding:15px;
+            margin:15px;
+            border-top-right-radius: 40px;
+            border-bottom-left-radius:40px;
+        }
+        legend{
+            background:linear-gradient(60deg,cyan,gold);
+            border:3px solid blue;
+            box-shadow:0 0 5px black;
+            padding:14px 25px;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius:20px;
+            font-family: "Old English Text MT",SansSerif;
+            font-size:20px;
+        }
+        input[type='text']{
+            font-size:18px;
+            height:35px;
+            border-radius:5px;
+            border:none;
+            outline:none;
+        }
+        textarea{
+            border-radius:5px;
+            border:none;
+            outline:none;
+            width:220px;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend>Personal Information</legend>
+        <table width="100%">
+            <tr>
+               <td><label>First Name</label></td>
+               <td><input type="text"></td>
+               <td><label>Middle Name</label></td>
+               <td><input type="text"></td>
+               <td><label>Last Name</label></td>
+               <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label>Father's Name</label></td>
+                <td><input type="text"></td>
+                <td><label>Mother's Name</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label>Current Address</label></td>
+                <td><textarea rows="5" cols="20"></textarea></td>
+                <td><label>Permanent Address</label></td>
+                <td><textarea rows="5" cols="20"></textarea></td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+</body>
+</html>

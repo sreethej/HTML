@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Table TAG</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+        }
+
+         table,th,td{
+             border:2px  solid black;
+             border-collapse:collapse;
+             padding:15px;
+             font-size: 18px;
+             text-align: center;
+
+         }
+        table{
+            width:100%;
+            box-shadow: 0 0 10px black;
+        }
+        #head{
+            background-color: chartreuse;
+        }
+        #body{
+            background-color: hotpink;
+            color:blue;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Simple Table -->
+    <h3> Simple Table </h3>
+    <table>
+        <tr>
+            <th>sno</th>
+            <th>name</th>
+            <th>designation</th>
+            <th>company</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>teju</td>
+            <td>software engineer</td>
+            <td>infosys</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>bharath</td>
+            <td>tech lead</td>
+            <td>wipro</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>deepu</td>
+            <td>manager</td>
+            <td>hcl</td>
+        </tr>
+    </table>
+
+
+
+    <!-- Table with Col Span -->
+    <h3> Table with Col Span </h3>
+    <table>
+        <thead>
+        <tr>
+            <th colspan="2">sno & name</th>
+
+            <th>designation</th>
+            <th>company</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>teju</td>
+            <td>software engineer</td>
+            <td>infosys</td>
+        </tr>
+        <tr>
+        <td>2</td>
+        <td>bharath</td>
+        <td colspan="2">tech lead - facebook</td>
+        </tr>
+        <tr>
+        <td>3</td>
+        <td>deepu</td>
+        <td>manager</td>
+        <td>wipro</td>
+        </tr>
+
+        </tbody>
+    </table>
+
+
+    <!-- Table With Row Span -->
+    <h3> Table With Row Span </h3>
+    <table>
+        <thead>
+        <tr>
+            <th>sno</th>
+            <th>name</th>
+            <th>designation</th>
+            <th>company</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td rowspan="3">1</td>
+            <td>teju</td>
+            <td>software engineer</td>
+            <td>infosys</td>
+        </tr>
+        <tr>
+
+            <td>bharath</td>
+            <td>tech lead</td>
+            <td>facebook</td>
+        </tr>
+        <tr>
+
+            <td>deepu</td>
+            <td>manager</td>
+            <td>wipro</td>
+        </tr>
+
+        </tbody>
+    </table>
+
+
+
+
+
+    <!-- Custom Table with CSS -->
+    <h3> Custom Table with CSS </h3>
+    <table>
+    <thead id="head">
+    <tr>
+        <th>sno</th>
+        <th>name</th>
+        <th>designation</th>
+        <th>company</th>
+    </tr>
+    </thead>
+    <tbody id="body">
+    <tr>
+        <td>1</td>
+        <td>teju</td>
+        <td>software engineer</td>
+        <td>infosys</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>bharath</td>
+        <td>tech lead</td>
+        <td>facebook</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>deepu</td>
+        <td>manager</td>
+        <td>wipro</td>
+    </tr>
+
+    </tbody>
+    </table>
+
+
+</body>
+</html>
