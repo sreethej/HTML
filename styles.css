@@ -1,24 +1,67 @@
-html{
-    scroll-behavior: smooth;
-}
 body{
-    font-family: "Comic Sans MS",sans-serif;
-    background-color: whitesmoke;
-    margin: 0;
+    font-family: Arial, sans-serif;
+    margin:0px;
 }
-h1 , p , td{
-    text-align: center;
-}
-h2{
-    background: linear-gradient(60deg,orangered,white,forestgreen);
-    text-align: center;
+header{
+    background-image: url("img/background2.jpg");
     padding: 10px;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 5px black;
+    color:white;
 }
-table{
-    width: 100%;
+nav{
+    background-color: black;
+    padding:5px;
 }
-img , iframe{
-    box-shadow: 0 0 10px black;
-    border-radius: 10px;
+nav a{
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+    padding:10px 25px;
+    display:inline-block;
+}
+nav a:hover{
+    background-color:red;
+}
+nav a.active{
+    background-color: red;
+}
+aside{
+    background-image: url("img/background2.jpg");
+    float: left;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 0 5px black;
+    position: sticky;
+    top: 0;
+    height: 800px;
+}
+aside a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 25px;
+    font-size: 18px;
+}
+aside a:hover{
+    background-color: red;
+}
+section{
+    margin-left:270px;
+}
+article img{
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    display: block;
+}
+
+article p{
+    font-size: 20px;
+    color: grey;
+}
+footer {
+    background-image: url("img/background2.jpg");
+    padding: 12px;
+    text-align: center;
+    color: white;
 }
